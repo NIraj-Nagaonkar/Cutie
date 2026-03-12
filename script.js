@@ -9,13 +9,13 @@ function handleYes() {
     // Hide all other images/gifs
     const mainImg = document.getElementById('main-image');
     const sadCatContainer = document.getElementById('sad-cat-container');
-    const kittyImg = document.getElementById('kitty-image');
+    
     const thirdCatContainer = document.getElementById('third-cat-container');
     const fourthCatContainer = document.getElementById('fourth-cat-container');
 
     if (mainImg) mainImg.style.display = 'none';
     if (sadCatContainer) sadCatContainer.style.display = 'none';
-    if (kittyImg) kittyImg.style.display = 'none';
+    
     if (thirdCatContainer) thirdCatContainer.style.display = 'none';
     if (fourthCatContainer) fourthCatContainer.style.display = 'none';
 
@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const heading = document.querySelector('h1');
     const mainImg = document.getElementById('main-image');
     const sadCatContainer = document.getElementById('sad-cat-container');
-    const kittyImg = document.getElementById('kitty-image');
+    
     const thirdCatContainer = document.getElementById('third-cat-container');
     const fourthCatContainer = document.getElementById('fourth-cat-container');
 
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Reset all custom images to hidden first
         if (sadCatContainer) sadCatContainer.style.display = 'none';
-        if (kittyImg) kittyImg.style.display = 'none';
+       
         if (thirdCatContainer) thirdCatContainer.style.display = 'none';
         if (fourthCatContainer) fourthCatContainer.style.display = 'none';
 
@@ -85,8 +85,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if (imageState === 1) {
             if (sadCatContainer) sadCatContainer.style.display = 'block';
         } else if (imageState === 2) {
-            if (kittyImg) kittyImg.style.display = 'block';
-        } else if (imageState === 3) {
             if (thirdCatContainer) thirdCatContainer.style.display = 'block';
         } else {
             // imageState === 0
